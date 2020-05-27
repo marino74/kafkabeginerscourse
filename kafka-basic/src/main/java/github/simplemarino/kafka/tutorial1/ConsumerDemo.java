@@ -36,7 +36,6 @@ public class ConsumerDemo {
 
         // poll for new data
         while(true){
-            logger.info("Logging info for git hub...");
             ConsumerRecords<String, String> records =
                     consumer.poll(Duration.ofMillis(100)); // new in Kafka 2.0.0
 
